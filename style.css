@@ -1,0 +1,124 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    background-color:#858484;
+}
+
+.first{
+    background-color: #000000;
+  color: white;
+  border: none;
+  padding: 15px;
+  margin-top: 70px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  border-radius: 40px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.main{
+    text-align: left;
+    width: 30%;
+    margin-left: 20px;
+    margin-top: 1%;
+}
+
+.block{
+    position: relative;
+    margin-top: 90px;
+    width: 85%;
+    height: 20%;
+    background-color:#000000;
+    padding: 40px;
+}
+
+.main::before, .main::after{
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background-size: 400%;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    z-index: -1;
+    animation: animate 20s linear infinite;
+}
+
+#timer{
+    text-align: end;
+    font-size: 20px;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: -80px;
+    
+}
+
+#ques{
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    font-size: 17px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+#opta{
+   padding-left: 10px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   color: white;
+}
+
+#optb{
+    padding-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+#optc{
+    padding-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.head{
+    margin-left: 20px;
+}
+
+.btn{
+    text-align: center;
+    display: flex;
+}
+
+button{
+    flex-grow: 1;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: white;
+    font-size: 21px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(46, 197, 32);
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(71, 71, 71);
+}
